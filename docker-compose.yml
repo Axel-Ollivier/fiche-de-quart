@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: fiche-de-quart
+    ports:
+      - "8080:80"
+    restart: unless-stopped
